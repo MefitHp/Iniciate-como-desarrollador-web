@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+    height: 70px;
+}
+
+.navbar li a {
+  display: block;
+  color: #ffffff;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.7); 
+}
+
+.navbar li a:hover {
+  color: rgba(204, 93, 93);
+  border-bottom: 2px solid rgb(204, 93, 93);
+  text-shadow: none;
+  overflow: hidden;
+}
+
+.header-banner{
+    /* display: flex; // primero lleva el d-flex, pero al poner el overlay se le quita*/
+    background-image: url('./../assets/header-background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+}
+
+/* Este overlay va hasta que el text se vea mal jaajaa */
+.banner-overlay{
+    width: 100%;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.header-text{
+    color: snow;
+    /* Este text-shadow hasta que el texto se vea mal */
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.7); 
+    /* background: rgba(0, 0, 0, 0.3); */
+    padding: 12px; 
+    margin: auto;
+    max-width: 800px;
+}
+
+.header-text h1 {
+    color: snow;
+    font-size: 52px;
+    margin: 8px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.header-text p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.75;
+}
+
+.header-text strong{
+    color: white;
+}
+
+.aboutMe{
+    background: dimgray;
+}
