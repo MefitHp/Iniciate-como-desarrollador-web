@@ -34,7 +34,6 @@ html {
 header {
     /* display: flex; // primero lleva el d-flex, pero al poner el overlay se le quita*/
     background-image: url('./../assets/header-background.jpg');
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -60,8 +59,8 @@ header {
 
 .header-image {
     border-radius: 50%;
-    padding-bottom: 20%;
-    width: 20%;
+    height: 300px;
+    width: 300px;
     background-image: url('https://scontent-yyz1-1.cdninstagram.com/vp/a2e129b177a8dfe6ef113ae1c7f8f410/5D3D002A/t51.2885-15/e35/45373969_489620521561630_7510260129674035200_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&se=8');
     background-size: cover;
     background-position: center;
@@ -98,5 +97,54 @@ header {
 
 .aboutMe {
     height: 100vh;
-    background: dimgray;
+    background: #dc7175;
+}
+
+.skills {
+    height: 100vh;
+    background: #525252;
+}
+
+.skills_nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80px; 
+    border: 1px solid black;
+}
+
+.skills_nav a{
+    flex: 1;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.scroll-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page-container{
+    border: 1px solid black;
+    width: 500px;
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.scroll-page {
+    box-sizing: border-box;
+  min-width: 500px;
+  padding: 1em;
+  border: 1px solid goldenrod;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 auto;
 }
